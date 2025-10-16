@@ -1,0 +1,16 @@
+.cerrar-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.cerrar-btn:hover {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}

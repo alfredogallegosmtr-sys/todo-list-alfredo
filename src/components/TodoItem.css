@@ -1,0 +1,52 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Asegura que la X quede al extremo derecho */
+  background: rgba(255,255,255,0.15);
+  padding: 14px 20px;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  animation: fadeInDown 0.3s ease forwards;
+}
+
+.todo-item.exit {
+  animation: fadeOutUp 0.3s ease forwards;
+}
+
+.todo-title {
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+  flex: 1; /* Ocupa el espacio restante */
+  margin-right: 15px; /* Espacio entre texto y X */
+}
+
+.todo-title.done {
+  text-decoration: line-through;
+  color: rgba(255,255,255,0.6);
+  font-style: italic;
+}
+
+/* Botón eliminar - X estilizada */
+.delete-btn {
+  font-size: 1.5rem; /* Más grande */
+  font-weight: bold;
+  color: #ff6b6b;
+  cursor: pointer;
+  background: rgba(255,255,255,0.15);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: rgba(255,255,255,0.3);
+  color: #ff3b3b;
+  transform: scale(1.1); /* Pequeño efecto hover */
+}
